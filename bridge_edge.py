@@ -1,3 +1,7 @@
+#Esse algoritmo serve para verificar se uma aresta é uma ponte ou não de um grafo.
+
+
+
 class Grafo:
     def __init__(self, vertices):
         self.vertices = vertices
