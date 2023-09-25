@@ -26,6 +26,9 @@ python3 <nome_do_arquivo>
 ## Observações
 &emsp;&emsp; O exercício [bridge edge](bridge_edge.py) foi adaptado, portanto, no final do código está o local onde a aresta a ser testada deve ser inserida, e para facilitar, o arquivo [grafo](grafo.txt) pode ser editado para o grafo que desejar, cada linha deve conter 2 numeros separados por espaço, sendo eles os 2 vértices que possuem uma aresta ligando-os.
 
+## Apresentação
+[![Apresentação Grafos 1](https://github.com/projeto-de-algoritmos/Grafos1_Juiz_Exercicios/assets/87666623/4018ec01-eb46-4ae7-83bf-932cea05e347)](https://youtu.be/8PL8drfA1Ts)
+
 ## Integrantes
 
 |                                                  **Foto**                                                   | **Matrícula** |        **Nome**         |
