@@ -29,7 +29,7 @@ Queue* createQueue() {
         queue->front = queue->rear = NULL;
     }
     return queue;
-}The quick brown fox jumps over the lazy dog
+}
 
 bool isEmpty(Queue* queue) {
     return (queue->front == NULL);
@@ -116,7 +116,7 @@ bool isPangram(char* sentence) {
 }
 
 int main() {
-    char sentence[1000]; // Assuming a maximum input sentence length of 999 characters
+    char sentence[1000];
     printf("Enter a sentence: ");
     fgets(sentence, sizeof(sentence), stdin);
     
