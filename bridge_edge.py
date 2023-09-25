@@ -70,13 +70,11 @@ class Grafo:
 
         num_componentes_antes = self.numero_componentes_conectados()
 
-        # Remova temporariamente a aresta para verificar o número de componentes após a remoção
         self.grafo[u].remove(v)
         self.grafo[v].remove(u)
 
         num_componentes_depois = self.numero_componentes_conectados()
 
-        # Restaure a aresta
         self.adicionar_aresta(u, v)
 
         print(f"O grafo tem {num_componentes_antes} componente(s) conectado(s) antes da remoção da aresta.")

@@ -5,6 +5,7 @@
 1. [Detect Pangram](https://www.codewars.com/kata/545cedaa9943f7fe7b000048)
 2. [Elevator Distance](https://www.codewars.com/kata/59f061773e532d0c87000d16)
 3. [Bridge Edge](https://practice.geeksforgeeks.org/problems/bridge-edge-in-graph/1?page=2&category[]=Graph&sortBy=submissions)
+4. [Oranges](https://www.codingninjas.com/studio/problem-details/rotting-oranges_701655)
 
 ## Como executar ?
 
