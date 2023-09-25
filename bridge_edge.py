@@ -1,5 +1,10 @@
 import os
 import sys
+import argparse
+
+
+vertice_origem = 1
+vertice_destino = 3
 
 class Grafo:
     def __init__(self, grafo=None):
@@ -98,13 +103,18 @@ class Grafo:
             print(f"O arquivo '{arquivo}' não foi encontrado. Usando o grafo predefinido no código.")
 
 def main():
+    parser = argparse.ArgumentParser(description='Verifica se uma aresta é uma ponte em um grafo.')
+    parser.add_argument('source', type=int, nargs='?', default=vertice_origem, help='Vértice de origem da aresta (opcional)')
+    parser.add_argument('destination', type=int, nargs='?', default=vertice_destino, help='Vértice de destino da aresta (opcional)')
+    args = parser.parse_args()
+
     grafo = Grafo()
 
-    # Verificar se o arquivo 'grafo.txt' existe
-    if os.path.isfile("grafo.txt"):
+    # Verificar se o arquivo 'assets/grafo.txt' existe
+    if os.path.isfile("assets/grafo.txt"):
         # Caso 1: Carregar grafo de arquivo
-        grafo.carregar_grafo_de_arquivo("grafo.txt")
-        print("Carregando grafo do arquivo 'grafo.txt'")
+        grafo.carregar_grafo_de_arquivo("assets/grafo.txt")
+        print("Carregando grafo do arquivo 'assets/grafo.txt'")
         
         # Verificar se o grafo carregado está vazio
         if not grafo.grafo:
@@ -119,8 +129,8 @@ def main():
         grafo.adicionar_aresta(2, 3)
         print("Usando grafo predefinido no código")
 
-    # Forneça a aresta que deseja testar
-    aresta_teste = (1, 2)
+    # Forneça a aresta que deseja testar (pode ser a predefinida ou a fornecida na linha de comando)
+    aresta_teste = (args.source, args.destination)
 
     if grafo.verifica_ponte(*aresta_teste):
         print(f"A aresta {aresta_teste} é uma ponte.")
